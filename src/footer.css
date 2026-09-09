@@ -8,6 +8,7 @@ footer{
     bottom: 0;
     right: 0;
     left: 0;
+    border-top: 1px solid rgb(57, 57, 57);
 }
 
 .footer-link {
@@ -73,6 +74,7 @@ footer{
   border-radius: 50px;
   padding: 0px;
   cursor: pointer;
+  margin-right: 10px;
 }
 .fac-pic {
   height: 100%;
@@ -82,6 +84,12 @@ footer{
 .fac-button:active,
 .fac-button:focus {
   border: 1px solid #3ea6ff;
+}
+@media(min-width:770px){
+    footer{
+        display: none;
+    }
+    
 }
 @media(max-width:359px){
     .footer-link .home{

@@ -232,6 +232,7 @@
   background-color: rgb(10, 10, 10);
   cursor: pointer;
   position: relative;
+  margin-right: 10px;
 }
 .notification-button .tooltip {
   color: whitesmoke;
@@ -286,16 +287,11 @@
     display: none;
   }
   .create-button {
-    width: 36px;
-    margin-right: 10px;
-    margin-left: 10px;
-    border-radius: 50%;
-    padding: 0px 0px 1px 10px;
+    display: none;
   }
-  .plus-create {
-   margin-right: 9px;
-   margin-top: 2px;
-}
+  .ac-button{
+    display: none;
+  }
   .search-button {
     height: 39px;
     width: 39px;

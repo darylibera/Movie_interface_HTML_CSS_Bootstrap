@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube.com Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/general.css" />
+    <link rel="stylesheet" href="./src/header.css" />
+    <link rel="stylesheet" href="./src/video.css" />
+    <link rel="stylesheet" href="./src/sidebar.css" />
+    <link rel="stylesheet" href="./src/top.css" />
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script defer>
+      function goToYouTube() {
+        const query = document.getElementById("yt-search").value;
+        if (!query) return;
+        window.location.href =
+          "https://www.youtube.com/results?search_query=" +
+          encodeURIComponent(query);
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <button class="menu-icon-button">
+          <i class="fa-solid fa-bars menu-icon"></i>
+        </button>
+        <a href="https://www.youtube.com/" target="_blank">
+          <button class="youicon-button">
+            <img src="icons/you-icon.png" class="youicon" />
+          </button>
+        </a>
+        <span class="in">IN</span>
+      </div>
+      <div class="header-mid">
+        <input
+          id="yt-search"
+          class="search-bar"
+          type="search"
+          name="search"
+          placeholder="Search"
+        />
+        <button onclick="goToYouTube()" class="search-button">
+          <img src="icons/search-icon.png" class="search-icon" />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-button">
+          <img src="icons/voice-icon.png" class="voice-icon" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="header-right">
+        <button class="create-button">
+          <span class="plus-create">+</span>
+          <span class="create-txt">Create</span>
+        </button>
+        <button class="notification-button">
+          <img src="icons/bell-icon.png" class="notification-bell-pic" />
+          <div class="tooltip">Notification</div>
+        </button>
+        <button class="ac-button">
+          <img src="icons/youprofile.jpg" class="ac-pic" />
+        </button>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <a class="sidebar-link" href="https://www.youtube.com/" target="_blank">
+        <img class="home" src="icons/homeicon.png" />
+        <div>Home</div>
+      </a>
+      <a class="sidebar-link" href="https://www.youtube.com/shorts/" target="_blank">
+        <img class="shorts" src="icons/shortsicon.png" />
+        <div>Shorts</div>
+      </a>
+      <a class="sidebar-link" href="https://www.youtube.com/feed/subscriptions" target="_blank">
+        <img class="subscriptions" src="icons/subscriptionicon.png" />
+        <div>Subscriptions</div>
+      </a>
+      <a class="sidebar-link" href="https://www.youtube.com/channel/CHANNEL_ID" target="_blank">
+        <img class="you" src="icons/youprofileicon.png" />
+        <div>You</div>
+      </a>
+    </aside>
+
+    <section class="channel-top">
+      <div class="channel-banner">
+        <img src="thumbnails/channel-banner.jpg" />
+      </div>
+
+      <div class="channel-profile">
+        <div class="channel-profile-imgp">
+          <img src="thumbnails/thenxprofile.jpg" />
+        </div>
+
+        <div class="channel-profile-text">
+            <div class="thenx">THENX <img src="icons\official.png" /></div>
+            <div class="info-text-jump">
+              <div class="thenx-tag">
+                @OFFICIALTHENXSTUDIOS <span>&#183;</span>
+              </div>
+              <div class="info">
+                7.83M subscribers <span>&#183;</span> 559 videos
+              </div>
+            </div>
+            <div class="more">
+              ELITE FITNESS TRAINING BY CHRIS HERIA <span>...more</span>
+            </div>
+            <div class="more-link"><span>thenx.com </span>and 2 more links</div>
+
+          <button class="subscribe-button">Subscribe</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="video-grid">
+      <a class="video-pre" href="https://www.youtube.com/watch?v=gnTzk1yUHB4" target="_blank">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thenxthumb1.avif" />
+          <div class="video-time">18:22</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="video-profile">
+            <img class="profile" src="thumbnails/thenxprofile.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Complete 15 Min Full Body Workout &#124; No Equipment
+            </p>
+            <p class="video-stats">
+              2.5M views <span>&#183;</span> 3 years ago
+            </p>
+            <p class="subtitle">CC</p>
+          </div>
+        </div>
+      </a>
+      <a class="video-pre" href="https://www.youtube.com/watch?v=P1mInEK7BEU" target="_blank">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thenxthumb2.avif" />
+          <div class="video-time">33:26</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="video-profile">
+            <img class="profile" src="thumbnails/thenxprofile.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Complete 30 Min ABS Workout &#124; Follow Along
+            </p>
+            <p class="video-stats">11M views <span>&#183;</span> 4 years ago</p>
+            <p class="subtitle">CC</p>
+          </div>
+        </div>
+      </a>
+      <a class="video-pre" href="https://www.youtube.com/watch?v=79cx5vmf3Qg" target="_blank">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thenxthumb3.avif" />
+          <div class="video-time">23:05</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="video-profile">
+            <img class="profile" src="thumbnails/thenxprofile.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Complete 20 Min Full Body Cardio Workout</p>
+            <p class="video-stats">3M views <span>&#183;</span> 3 years ago</p>
+            <p class="subtitle">CC</p>
+          </div>
+        </div>
+      </a>
+      <a class="video-pre" href="https://www.youtube.com/watch?v=5KXZ9I2z1m4" target="_blank">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thenxthumb4.avif" />
+          <div class="video-time">23:32</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="video-profile">
+            <img class="profile" src="thumbnails/thenxprofile.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Complete 20 Min Full Body Workout To Lose Weight &#40; Follow
+              Along &#41;
+            </p>
+            <p class="video-stats">
+              1.1M views <span>&#183;</span> 3 years ago
+            </p>
+            <p class="subtitle">CC</p>
+          </div>
+        </div>
+      </a>
+      <a class="video-pre" href="https://www.youtube.com/watch?v=fqCeYdMCnFs" target="_blank">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thenxthumb5.avif" />
+          <div class="video-time">23:01</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="video-profile">
+            <img class="profile" src="thumbnails/thenxprofile.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Complete 20 Min Cardio Workout To Replace Treadmill &#40; Follow
+              Along &#41;
+            </p>
+            <p class="video-stats">
+              1.4M views <span>&#183;</span> 3 years ago
+            </p>
+            <p class="subtitle">CC</p>
+          </div>
+        </div>
+      </a>
+      <a class="video-pre" href="https://www.youtube.com/watch?v=1OjIqYtgEd8" target="_blank">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thenxthumb6.avif" />
+          <div class="video-time">11:59</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="video-profile">
+            <img class="profile" src="thumbnails/thenxprofile.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              9 Min HOME Workout For BIGGER Arms &#40;NO EQUIPMENT&#41;
+            </p>
+            <p class="video-stats">
+              49K views <span>&#183;</span> 4 months ago
+            </p>
+            <p class="subtitle">CC</p>
+          </div>
+        </div>
+      </a>
+      <a class="video-pre" href="https://www.youtube.com/watch?v=EsCIU5tfVMs" target="_blank">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thenxthumb7.avif" />
+          <div class="video-time">10:26</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="video-profile">
+            <img class="profile" src="thumbnails/thenxprofile.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              The BEST Calisthenics Workout From HOME For 3D DELTS &#40;NO
+              WEIGHTS&#41;
+            </p>
+            <p class="video-stats">
+              137K views <span>&#183;</span> 6 months ago
+            </p>
+            <p class="subtitle">CC</p>
+          </div>
+        </div>
+      </a>
+      <a class="video-pre" href="https://www.youtube.com/watch?v=TF9XhvYh_m8" target="_blank">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thenxthumb8.avif" />
+          <div class="video-time">10:18</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="video-profile">
+            <img class="profile" src="thumbnails/thenxprofile.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">How To Human Flag The Easiest Way</p>
+            <p class="video-stats">
+              834K views <span>&#183;</span> 4 years ago
+            </p>
+            <p class="subtitle">CC</p>
+          </div>
+        </div>
+      </a>
+      <a class="video-pre" href="https://www.youtube.com/watch?v=wB9ukMeQfjU" target="_blank">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thenxthumb9.avif" />
+          <div class="video-time">19:26</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="video-profile">
+            <img class="profile" src="thumbnails/thenxprofile.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              15 Min Complete Home Leg Workout &#124; Follow Along
+            </p>
+            <p class="video-stats">
+              688K views <span>&#183;</span> 3 years ago
+            </p>
+            <p class="subtitle">CC</p>
+          </div>
+        </div>
+      </a>
+      <a class="video-pre" href="https://www.youtube.com/watch?v=q7rCeOa_m58" target="_blank">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thenxthumb10.avif" />
+          <div class="video-time">23:25</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="video-profile">
+            <img class="profile" src="thumbnails/thenxprofile.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              20 Min Complete Home Leg Workout &#124; Follow Along
+            </p>
+            <p class="video-stats">
+              7.6M views <span>&#183;</span> 4 years ago
+            </p>
+            <p class="subtitle">CC</p>
+          </div>
+        </div>
+      </a>
+      <a class="video-pre" href="https://www.youtube.com/watch?v=OmKfROtB45Q" target="_blank">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thenxthumb11.avif" />
+          <div class="video-time">18:51</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="video-profile">
+            <img class="profile" src="thumbnails/thenxprofile.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">How To Full Planche &#124; 10 Steps</p>
+            <p class="video-stats">
+              2.8M views <span>&#183;</span> 5 years ago
+            </p>
+            <p class="subtitle">CC</p>
+          </div>
+        </div>
+      </a>
+      <a class="video-pre" href="https://www.youtube.com/watch?v=FZZqbeZti84" target="_blank">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thenxthumb12.avif" />
+          <div class="video-time">13:07</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="video-profile">
+            <img class="profile" src="thumbnails/thenxprofile.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">How To Back Lever &#45; 5 Easy Steps</p>
+            <p class="video-stats">
+              721K views <span>&#183;</span> 7 years ago
+            </p>
+            <p class="subtitle">CC</p>
+          </div>
+        </div>
+      </a>
+    </main>
+    <footer></footer>
+  </body>
+</html>

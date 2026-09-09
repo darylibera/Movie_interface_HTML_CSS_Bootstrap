@@ -1,0 +1,164 @@
+.channel-top {
+  display: grid;
+  grid-template-rows: auto;
+  border-bottom: solid 1px grey ;
+  margin-bottom: 20px;
+}
+
+.channel-banner {
+ display:grid;
+ grid-template-rows: 1fr;
+ overflow: hidden;
+}
+.channel-profile{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  margin: 20px 3%;
+  align-items: center
+
+}
+.channel-profile-imgp{
+   display: flex;
+   align-items: center;
+}
+.channel-profile-imgp img {
+    width: auto;
+    height: clamp(125px, 13vw, 180px);
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.channel-banner img {
+  width: 100%;
+  height: auto;
+  min-width: 0;
+  margin-top: 0px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.channel-profile-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: white;
+    font-family: roboto, arial;
+}
+.channel-profile-text .thenx{
+    font-size: clamp(28px, 3vw, 36px);
+    font-weight: 700;
+    position: relative;
+}
+.channel-profile-text .thenx img {
+  height: clamp(10px,2vw,20px);
+  padding-bottom: 2px;
+}
+.info-text-jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.thenx-tag {
+    font-size: clamp(11px, 3vw, 13px);
+    white-space: nowrap; /* keeps it together */
+}
+.thenx-tag span{
+  color: rgb(170, 170, 170);
+  font-weight: 700;
+  padding-left: 3px;
+}
+
+.info {
+    color: rgb(170, 170, 170);
+    font-size: clamp(13px, 1.4vw, 14px);
+    white-space: nowrap; /* keeps it together */
+}
+.info span{
+  font-weight: 700;
+}
+.more{
+  color: rgb(170, 170, 170);
+  font-size: clamp(13px, 1.4vw, 14px);
+}
+.more span{
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.more-link{
+  color: white;
+  font-weight: 500;
+  font-size: clamp(13px, 1.4vw, 14px);
+}
+.more-link span{
+  color: #3ea6ff;
+  cursor: pointer;
+}
+.subscribe-button {
+  font-family:Roboto,arial ;
+  font-weight: 500;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 25px;
+  border: none;
+  max-width: 400px;
+  cursor: pointer;
+}
+.subscribe-button:hover{
+ background-color: rgb(210, 210, 210); 
+}
+.subscribe-button:active{
+  background-color: rgb(141, 139, 139)
+}
+@media (max-width:466px){
+  .channel-banner{
+    height: 100px;
+  }
+  .channel-banner>img{
+    height: 100px;
+  }
+}
+@media (max-width:366px){
+  .info{
+    white-space:normal;
+  }
+  body{
+    padding-top: 55px;
+  }
+  .subscribe-button{
+    max-width: 300px;
+  }
+  .channel-profile{
+    margin-left: 0px;
+    gap:10px
+  }
+}
+@media (max-width:307px){
+  .info{
+    white-space:normal;
+  }
+  body{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .channel-profile{
+    margin-left: 0px;
+    gap:10px
+  }
+  .channel-profile-imgp{
+    justify-content: center;
+  }
+  .more{
+    white-space: normal;
+  }
+  .channel-profile-imgp>img{
+        height: clamp(100px, 13vw, 180px);
+  }
+  .channel-profile-text{
+    line-height:12px;
+  }
+  .channel-profile{
+    margin: 15px 0px;
+  }
+}

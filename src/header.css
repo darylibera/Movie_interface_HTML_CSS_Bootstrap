@@ -103,7 +103,12 @@
   background-color: black;
 }
 .search-icon {
-  height: 23px;
+   height: 18px;
+  width: 18px;
+  color: rgba(255, 255, 255, 0.726);
+  cursor: pointer;
+  padding: 0px 0px;
+  font-size: 17px;
 }
 .search-button {
   height: 39px;
@@ -166,7 +171,7 @@
   opacity: 0.9;
 }
 .voice-icon {
-  height: 25px;
+  height: 20px;
 }
 .voice-button:hover {
   background-color: rgb(64, 64, 64);
@@ -208,15 +213,20 @@
   font-weight: 500px;
 }
 .plus-create {
-  font-size: 31px;
   margin-right: 10px;
   align-items: center;
   font-family: Comic-Neue;
   font-weight: bold;
+  height: 18px;
+  width: 18px;
+  color: white;
+  cursor: pointer;
+  padding: 0px 0px;
+  font-size: 17px;
 }
 .notification-button {
-  height: 39px;
-  width: 39px;
+  height: 37px;
+  width: 37px;
   border: none;
   border-radius: 50px;
   background-color: rgb(10, 10, 10);
@@ -240,8 +250,7 @@
   opacity: 0.9;
 }
 .notification-bell-pic {
-  height: 23px;
-  width: 20px;
+  height: 20px;
   border-radius: 50px;
 }
 .notification-button:hover {
@@ -278,13 +287,14 @@
   }
   .create-button {
     width: 36px;
-    margin-right: 2px;
+    margin-right: 10px;
     margin-left: 10px;
     border-radius: 50%;
     padding: 0px 0px 1px 10px;
   }
   .plus-create {
-  margin-right: 0px;
+   margin-right: 9px;
+   margin-top: 2px;
 }
   .search-button {
     height: 39px;

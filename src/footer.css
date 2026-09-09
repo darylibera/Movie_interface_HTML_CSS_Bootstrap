@@ -1,0 +1,110 @@
+footer{
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footer-link {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.footer-link img {
+    height: 24px;
+    
+}
+.footer-link {
+    font-family: roboto,arial;
+    font-size: 10px;
+    font-weight: 400;
+}
+.footer-link:hover{
+   background-color: rgb(34, 34, 34);
+}
+.footer-link:active {
+    background-color: rgb(44, 44, 44);
+}
+.footer-link .home{
+    height: 24px;
+}
+.footer-link .shorts,
+.footer-link .subscriptions,
+.footer-link .you{
+    height: 29px;
+}
+.fcreate-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+    width: 36px;
+  cursor: pointer;
+  border: none;
+  border-radius: 18px;
+  background-color: rgb(34, 34, 34);
+  color: white;
+  font-weight: 450;
+      padding: 0px 0px 1px 10px;
+
+}
+  .fplus-create {
+   margin-right: 9px;
+   margin-top: 2px;
+}
+.fac-button {
+  height: 32px;
+  border: none;
+  border-radius: 50px;
+  padding: 0px;
+  cursor: pointer;
+}
+.fac-pic {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.fac-button:active,
+.fac-button:focus {
+  border: 1px solid #3ea6ff;
+}
+@media(max-width:359px){
+    .footer-link .home{
+    height: 19px;
+}
+.footer-link .shorts,
+.footer-link .subscriptions,
+.footer-link .you{
+    height: 24px;
+}
+.footer-link {
+    font-family: roboto,arial;
+    font-size: 8px;
+    font-weight: 500;
+}
+.fcreate-button{
+    height: 33px;
+    width: 33px;
+}
+.fac-button {
+  height: 28px;
+}
+.footer-link{
+    width: 57px;
+}
+}

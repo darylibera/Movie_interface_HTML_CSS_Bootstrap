@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CORE - Account</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/general.css" />
+    <link rel="stylesheet" href="./src/header.css" />
+    <link rel="stylesheet" href="./src/video.css" />
+    <link rel="stylesheet" href="./src/sidebar.css" />
+    <link rel="stylesheet" href="./src/top.css" />
+    <link rel="stylesheet" href="./src/footer.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <button class="menu-icon-button">
+          <i class="fa-solid fa-bars menu-icon"></i>
+        </button>
+
+        <a class="youicon-button" href="index.html">
+          <img src="./thumbnails/mainlogo.png" class="youicon" />
+        </a>
+      </div>
+
+      <div class="header-mid">
+        <input class="search-bar" type="search" placeholder="Search" />
+
+        <button class="search-button">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </button>
+      </div>
+
+      <div class="header-right">
+        <a class="create-button" href="create.html">
+          <i class="fa-solid fa-plus plus-create"></i>
+          <span class="create-txt">Create</span>
+        </a>
+
+        <button class="notification-button">
+          <i class="fa-regular fa-bell notification-icon"></i>
+        </button>
+
+        <a class="ac-button" href="account.html">
+          <img src="./thumbnails/logo.jpg" class="ac-pic" />
+        </a>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <a class="sidebar-link" href="index.html">
+        <i class="fa-solid fa-house sidebar-icon"></i>
+        <div>Home</div>
+      </a>
+
+      <a class="sidebar-link" href="drama.html">
+        <i class="fa-solid fa-masks-theater sidebar-icon"></i>
+        <div>Drama</div>
+      </a>
+
+      <a class="sidebar-link sidebar-create" href="create.html">
+        <i class="fa-solid fa-plus sidebar-icon"></i>
+        <div>Create</div>
+      </a>
+
+      <a class="sidebar-link" href="movies.html">
+        <i class="fa-solid fa-film sidebar-icon"></i>
+        <div>Movies</div>
+      </a>
+
+      <a class="sidebar-link active" href="account.html">
+        <i class="fa-solid fa-user sidebar-icon"></i>
+        <div>Account</div>
+      </a>
+    </aside>
+
+    <main class="account-page">
+      <section class="account-box">
+        <img src="./thumbnails/logo.jpg" class="account-profile" />
+
+        <div class="account-name">
+          CORE
+          <i class="fa-solid fa-circle-check verified"></i>
+        </div>
+
+        <div class="account-tag">@OFFICIALCORESTUDIO</div>
+
+        <div class="account-stats">
+          <div>
+            <strong>7.83M</strong>
+            <span>Followers</span>
+          </div>
+
+          <div>
+            <strong>559</strong>
+            <span>Videos</span>
+          </div>
+
+          <div>
+            <strong>120</strong>
+            <span>Following</span>
+          </div>
+        </div>
+
+        <a class="account-connect" href="#">
+          <i class="fa-solid fa-user-plus"></i>
+          Connect
+        </a>
+
+        <div class="account-options">
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+            Profile
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-solid fa-gear"></i>
+            Settings
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-solid fa-circle-question"></i>
+            Help
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="footer-link" href="index.html">
+        <i class="fa-regular fa-house flogo"></i>
+        <div>Home</div>
+      </a>
+
+      <a class="footer-link" href="drama.html">
+        <i class="fa-solid fa-masks-theater flogo"></i>
+        <div>Drama</div>
+      </a>
+
+      <a class="fcreate-button" href="create.html">
+        <i class="fa-solid fa-plus fplus-create"></i>
+      </a>
+
+      <a class="footer-link" href="movies.html">
+        <i class="fa-solid fa-film flogo"></i>
+        <div>Movies</div>
+      </a>
+
+      <a class="fac-button active-account" href="account.html">
+        <img src="./thumbnails/logo.jpg" class="fac-pic" />
+      </a>
+    </footer>
+  </body>
+</html>

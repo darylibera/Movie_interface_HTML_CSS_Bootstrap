@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CORE - Movies</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/general.css" />
+    <link rel="stylesheet" href="./src/header.css" />
+    <link rel="stylesheet" href="./src/video.css" />
+    <link rel="stylesheet" href="./src/sidebar.css" />
+    <link rel="stylesheet" href="./src/top.css" />
+    <link rel="stylesheet" href="./src/footer.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <button class="menu-icon-button">
+          <i class="fa-solid fa-bars menu-icon"></i>
+        </button>
+
+        <a class="youicon-button" href="index.html">
+          <img src="./thumbnails/mainlogo.png" class="youicon" />
+        </a>
+      </div>
+
+      <div class="header-mid">
+        <input class="search-bar" type="search" placeholder="Search movies" />
+
+        <button class="search-button">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </button>
+
+        <button class="voice-button">
+          <i class="fa-solid fa-microphone voice-icon"></i>
+        </button>
+      </div>
+
+      <div class="header-right">
+        <a class="create-button" href="create.html">
+          <i class="fa-solid fa-plus plus-create"></i>
+          <span class="create-txt">Create</span>
+        </a>
+
+        <button class="notification-button">
+          <i class="fa-regular fa-bell notification-icon"></i>
+        </button>
+
+        <a class="ac-button" href="account.html">
+          <img src="./thumbnails/logo.jpg" class="ac-pic" />
+        </a>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <a class="sidebar-link" href="index.html">
+        <i class="fa-solid fa-house sidebar-icon"></i>
+        <div>Home</div>
+      </a>
+
+      <a class="sidebar-link" href="drama.html">
+        <i class="fa-solid fa-masks-theater sidebar-icon"></i>
+        <div>Drama</div>
+      </a>
+
+      <a class="sidebar-link sidebar-create" href="create.html">
+        <i class="fa-solid fa-plus sidebar-icon"></i>
+        <div>Create</div>
+      </a>
+
+      <a class="sidebar-link active" href="movies.html">
+        <i class="fa-solid fa-film sidebar-icon"></i>
+        <div>Movies</div>
+      </a>
+
+      <a class="sidebar-link" href="account.html">
+        <i class="fa-solid fa-user sidebar-icon"></i>
+        <div>Account</div>
+      </a>
+    </aside>
+
+    <main class="page-content">
+      <div class="page-heading">
+        <div class="page-title">
+          <i class="fa-solid fa-film"></i>
+          Movies
+        </div>
+
+        <div class="page-description">
+          Discover movies, anime, cartoons and cinematic stories.
+        </div>
+      </div>
+
+      <div class="movie-grid">
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://m.media-amazon.com/images/I/81IfoBox2TL.jpghttps://m.media-amazon.com/images/I/81IfoBox2TL.jpg"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 8.5</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://m.media-amazon.com/images/M/MV5BNTcyNmJlZmQtNDUwYy00NDBjLTg1NGQtYTY2Y2UxMWM3NmI1XkEyXkFqcGc@._V1_.jpg"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 6.5</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://m.media-amazon.com/images/I/71eHZFw+GlL.jpg"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 7.5</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://m.media-amazon.com/images/M/MV5BZTk5ODY0MmQtMzA3Ni00NGY1LThiYzItZThiNjFiNDM4MTM3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 7.0</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://external-preview.redd.it/new-pirates-of-the-caribbean-poster-v0-WDjNlPdENwN-OBz2Yav0MwD-63Z792QgRXzIDeo5Cr0.jpeg?width=640&crop=smart&auto=webp&s=a49c873293a46a0c15af6421c7235f59932a9544"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 9.4</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://m.media-amazon.com/images/M/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_.jpg"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 8.6</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/be1e22165576511.66e514ebcd1ad.jpg"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 7.3</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://m.media-amazon.com/images/I/61t9ie31jgL._AC_UF894,1000_QL80_.jpg"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 8.0</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/e07c4221688503.56306542a16a4.jpg"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 9.0</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://m.media-amazon.com/images/M/MV5BZGQwNDdhODAtY2Y0Ni00YzFhLTk1OGUtY2RkMDAzNzBmZjAxXkEyXkFqcGc@._V1_.jpg"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 7.1</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://www.cinematerial.com/p/500x/tzij2ug6/john-wick-chapter-4-movie-poster.jpg?v=1719548432"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 7.8</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://m.media-amazon.com/images/M/MV5BYTY4NWY2MWQtMGFkMi00MDViLWEwZDgtNGMyZjA3MmYzMWU5XkEyXkFqcGc@._V1_.jpg"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 6.3</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://pbs.twimg.com/media/EeL16mCVoAAsVto.jpg:large"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 9.0</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/vishwanath-and-sons-et00489815-1772610917.jpg"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 6.8</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://m.media-amazon.com/images/M/MV5BYTQ3Y2JmNTItNTdkNC00YTlhLWIyMTItOTRiYmFiODJjZmYxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 7.8</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://images.radiocity.in/images/uploads/web-stories/Nani2_ws.jpg"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 7.2</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCg4ldoAb-RckmCQ_4KfrvGyXE0ELKr5W0j-P5h1c59grHePGpLNSR2sk&s=10"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 6.7</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVI1t8IuNh4uN3cbQK4gaCnsOGO54svuzndwJj8wx86A&s=10"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 6.4</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://upload.wikimedia.org/wikipedia/en/f/f0/The_Incredible_Hulk_%28film%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 8.0</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://m.media-amazon.com/images/M/MV5BNzJkNTk0ODktM2Q1Yy00ZjM2LWI1N2YtNzUxZWJkOWZiZTM0XkEyXkFqcGc@._V1_.jpg"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 8.5</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8PkODydMusE8uzwqqfLcxogvXPW_M8tx5OafnFZkH4ETWevQekrdYBek&s=10"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 8.9</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeRdvCKQIdH1XFVqrp_VwFwRr0cSBZQN46GUFhUKQg2mV7Wv3fCXsTnEA&s=10"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 9.0</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://preview.redd.it/new-official-poster-for-the-batman-v0-jb5aaywg7sy71.jpg?width=640&crop=smart&auto=webp&s=978db0d3e7c082da614fbcc40fd1da1a067d60d9"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 6.4</div>
+          </div>
+        </a>
+        <a class="movie-pre" href="#">
+          <div class="movie-row">
+            <img
+              class="movie"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBz_T1uirqlJsKDwFXkoHRo8leObhmt9lQeo94d70olQ&s=10"
+            />
+            <div class="movie-rating"><i class="fa-solid fa-star"></i> 6.8</div>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <a class="footer-link" href="index.html">
+        <i class="fa-regular fa-house flogo"></i>
+        <div>Home</div>
+      </a>
+
+      <a class="footer-link" href="drama.html">
+        <i class="fa-solid fa-masks-theater flogo"></i>
+        <div>Drama</div>
+      </a>
+
+      <a class="fcreate-button" href="create.html">
+        <i class="fa-solid fa-plus fplus-create"></i>
+      </a>
+
+      <a class="footer-link active" href="movies.html">
+        <i class="fa-solid fa-film flogo"></i>
+        <div>Movies</div>
+      </a>
+
+      <a class="fac-button" href="account.html">
+        <img src="./thumbnails/logo.jpg" class="fac-pic" />
+      </a>
+    </footer>
+  </body>
+</html>

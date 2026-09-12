@@ -1,14 +1,301 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-            background-color: rgb(10, 10, 10);
-            margin: 0px;
-            padding-top: 89px;
-            padding-right: 20px;
-            padding-left: 90px;
-            font-family: roboto,arial;
-        }
-      p {
-        margin-bottom: 0px;
-        margin-top: 0px;
-        color: white;
-        
-      }
+  background:
+    radial-gradient(circle at 80% 10%, rgba(0, 82, 255, 0.12), transparent 30%),
+    radial-gradient(circle at 15% 80%, rgba(0, 255, 80, 0.08), transparent 30%),
+    linear-gradient(120deg, #000000 25%, #011d00 60%, #002e04 85%, #125302 100%);
+
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding-top: 85px;
+  padding-right: 20px;
+  padding-left: 90px;
+  padding-bottom: 20px;
+
+  min-height: 100vh;
+
+  color: white;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+}
+
+.page-content {
+  width: 100%;
+}
+
+.page-heading {
+  margin-bottom: 25px;
+  padding: 10px 5px;
+}
+
+.page-title {
+  color: white;
+  font-size: clamp(25px, 3vw, 36px);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-title i {
+  color: #00d639;
+  font-size: 26px;
+}
+
+.page-description {
+  color: rgb(160, 160, 160);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.create-page,
+.account-page {
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.create-box,
+.account-box {
+  width: min(600px, 100%);
+  background: rgba(8, 8, 8, 0.72);
+  border: 1px solid rgba(0, 255, 80, 0.18);
+  border-radius: 20px;
+  padding: 35px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+}
+
+.create-box {
+  text-align: center;
+}
+
+.create-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #003bff, #00a83b);
+  color: white;
+  font-size: 24px;
+}
+
+.create-box h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.create-box > p {
+  color: rgb(160, 160, 160);
+  margin-top: 8px;
+}
+
+.create-options {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.create-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid rgb(45, 45, 45);
+  border-radius: 12px;
+  background-color: rgb(18, 18, 18);
+  color: white;
+  cursor: pointer;
+}
+
+.create-option:hover {
+  background-color: rgb(28, 28, 28);
+  border-color: #006eff;
+}
+
+.create-option > i {
+  width: 40px;
+  font-size: 22px;
+  color: #00d639;
+  text-align: center;
+}
+
+.create-option div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.create-option strong {
+  font-size: 15px;
+}
+
+.create-option span {
+  color: rgb(150, 150, 150);
+  font-size: 12px;
+}
+
+.account-box {
+  text-align: center;
+}
+
+.account-profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00d639;
+}
+
+.account-name {
+  margin-top: 15px;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.verified {
+  color: #00aaff;
+  font-size: 14px;
+}
+
+.account-tag {
+  color: rgb(150, 150, 150);
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.account-stats {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  margin: 25px 0;
+}
+
+.account-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.account-stats strong {
+  font-size: 18px;
+}
+
+.account-stats span {
+  color: rgb(150, 150, 150);
+  font-size: 11px;
+}
+
+.account-connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 11px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  background: linear-gradient(100deg, #003bff, #00a83b);
+}
+
+.account-connect:hover {
+  background: linear-gradient(100deg, #0055ff, #00d639);
+}
+
+.account-options {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-options a {
+  display: grid;
+  grid-template-columns: 25px 1fr 15px;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 5px;
+  border-bottom: 1px solid rgb(40, 40, 40);
+  text-decoration: none;
+  text-align: left;
+  font-size: 14px;
+}
+
+.account-options a:hover {
+  color: #00d639;
+}
+
+.account-options a i:last-child {
+  color: rgb(110, 110, 110);
+  font-size: 11px;
+}
+
+@media (max-width: 769px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 65px;
+  }
+
+  .create-page,
+  .account-page {
+    min-height: calc(100vh - 140px);
+  }
+}
+
+@media (max-width: 466px) {
+  .create-box,
+  .account-box {
+    padding: 25px 18px;
+  }
+
+  .account-stats {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 359px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .account-stats {
+    gap: 15px;
+  }
+
+  .create-box h1 {
+    font-size: 26px;
+  }
+}
